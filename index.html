@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="IV Drip Rate Calculator">
+        <meta name="theme-color" content="#4AA1AF" />
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="IV Drip Rate Calculator">
+        <link rel="apple-touch-icon" href="/icon.svg">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="./manifest.json"/>
+        
+        
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+        <style type="text/css">
+            body{
+                text-align: center;
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.1em;
+                background-color: rgb(241, 241, 241);
+            }
+
+            ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: #4AA1AF;
+                opacity: 1; /* Firefox */
+                font-size: 0.7rem;
+                }
+
+            label{
+                font-size:0.8rem;
+                color: rgb(90,90,90);
+                padding: 0.2rem;
+            }
+            #container{
+                text-align: center;
+            }
+            #ivfr {
+                display: inline-block;
+                text-align: left;
+            }
+            div{
+
+                padding: 0.2rem;
+            }
+            h3{
+                text-align: center;
+                color: #4AA1AF;
+                font-size: 1.4rem;
+            }
+
+            input[type="number"]{
+                font-size: 1.2em;
+                padding: 0.2rem 0.4rem;
+                width: 5rem;
+                border:1px solid #4AA1AF;
+                border-radius:3px;
+                
+            }
+            #time-element{
+                padding: 0.2rem 0.4rem;
+                border-radius: 3px;
+                display: inline-block;
+                border: 1px solid #4AA1AF;
+                background-color: rgb(255,255,255);
+            }
+            #input-time{
+                width: 3rem;
+                padding: 0;
+                text-align:right;
+                border: none;
+            }
+            select{
+                background-color: #fff; 
+                color: #4AA1AF;
+                border: none;
+                font-size: 0.7em;
+                padding: 0;
+            }
+        </style>
+
+        
+    </head>
+    <body>
+
+        <div id="IVForm"></div>
+
+
+        <script type="text/javascript">
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker
+                    .register('service-worker.js', { scope: './' })
+                    .then(() => {
+                        console.info('Developer for Life Service Worker Registered');
+                    }, err => console.error("Developer for Life Service Worker registration failed: ", err));
+
+                navigator.serviceWorker
+                    .ready
+                    .then(() => {
+                        console.info('Developer for Life Service Worker Ready');
+                    });
+            }
+        </script>
+
+        <!-- Load React. -->
+        <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+        <!-- Load our React component. -->
+        <script type="text/babel" src="./components/IVForm.js"></script>
+    </body>
+</html>
