@@ -6,9 +6,8 @@ const assets = [
   '/icons/icon-192.png',
   '/icons/icon-512.ong',
   'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap',
-  'https://unpkg.com/react@16/umd/react.development.js',
-  'https://unpkg.com/react-dom@16/umd/react-dom.development.js',
-  'https://unpkg.com/babel-standalone@6/babel.min.js',
+  'https://unpkg.com/react@16/umd/react.production.min.js',
+  'https://unpkg.com/react-dom@16/umd/react-dom.production.min.js',
   '',
 ];
 self.addEventListener('install', evt => {
