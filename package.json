@@ -4,7 +4,7 @@
   "description": "IV Flow Rate Calculator PWA",
   "scripts": {
     "build": "npx babel components --out-dir components --out-file-extension .min.js",
-    "watch": "npx babel components --out-dir components --watch --out-file-extension .min.js",
+    "watch": "npx babel components --out-dir components --watch --out-file-extension .min.js"
   },
   "repository": "github:blanketoctopus/ivflowrate",
   "author": "BlanketOctopus",

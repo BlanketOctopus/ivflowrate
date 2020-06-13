@@ -1,0 +1,64 @@
+body{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    background-color: rgb(241, 241, 241);
+}
+
+::placeholder {
+    color: #4AA1AF;
+    opacity: 1;
+    font-size: 0.7rem;
+    }
+
+label{
+    font-size:0.8rem;
+    color: rgb(90,90,90);
+    padding: 0.2rem;
+}
+#container{
+    display: inline-block;
+    text-align: left;
+}
+#ivfr {
+    display: inline-block;
+    text-align: left;
+}
+div{
+
+    padding: 0.2rem;
+}
+h3{
+    text-align: center;
+    color: #00964C;
+    font-size: 1.4rem;
+}
+
+input[type="text"]{
+    font-size: 1.2em;
+    padding: 0.2rem 0.4rem;
+    width: 5rem;
+    border:1px solid #00964C;
+    border-radius:3px;
+    
+}
+#time-element{
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    display: inline-block;
+    border: 1px solid #00964C;
+    background-color: rgb(255,255,255);
+}
+#input-time{
+    width: 3rem;
+    padding: 0;
+    text-align:right;
+    border: none;
+}
+select{
+    background-color: #fff; 
+    color: #00964C;
+    border: none;
+    font-size: 0.7em;
+    padding: 0;
+}

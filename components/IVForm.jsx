@@ -69,12 +69,12 @@ class IVForm extends React.Component{
       <div id="container">
         <div>
           <label for="volume">Total Volume:</label>
-          <input type="number" onChange={this.handleChange} min="1" max="1000" pattern="[0-9]" name="volume" id="volume" placeholder="ml"/>
+          <input type="text" onChange={this.handleChange} pattern="[0-9]" name="volume" id="volume" placeholder="ml"/>
         </div>
         <div>
           <label for="time">Infusion Time:</label>
           <div id="time-element">
-            <input type="number" onChange={this.handleChange} min="1" max="999" pattern="[0-9]" name="time" id="time" placeholder="0"/>
+            <input type="text" onChange={this.handleChange} pattern="[0-9]" name="time" id="time" placeholder="0"/>
             <select name="timetype" name="unit" id="unit" onChange={this.handleChange} value={this.state.unit}>
               <option value="m">Minutes</option>
               <option value="h">Hours</option>
@@ -87,7 +87,7 @@ class IVForm extends React.Component{
         </div>
         <div>
           <label for="flow">Drop Factor:</label>
-          <input type="number" onChange={this.handleChange} min="1" max="999" pattern="[0-9]" name="flow" id="flow" placeholder="gtts/ml" disabled={this.state.checked}/>
+          <input type="text" onChange={this.handleChange} pattern="[0-9]" name="flow" id="flow" placeholder="gtts/ml" disabled={this.state.checked}/>
         </div>
         <div id="output" class="update">IV Flow Rate: {this.state.flowRate.rate} {this.state.flowRate.unit}</div>
       </div>

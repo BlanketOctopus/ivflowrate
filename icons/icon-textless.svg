@@ -1,0 +1,10 @@
+<svg id="Drop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 302 442.6">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00964c;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M380.8,250,259,39a10.4,10.4,0,0,0-18,0L119.2,250a151,151,0,1,0,261.8.3Z" transform="translate(-99 -33.9)"/>
+</svg>

@@ -1,4 +1,4 @@
-const CACHE_NAME = "ivform-v1";
+const CACHE_NAME = "ivform-v1.1";
 const assets = [
   '/',
   '/index.html',
